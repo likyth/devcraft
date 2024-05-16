@@ -1,0 +1,340 @@
+/* Styling for the main about section */
+#aboutUsTitle {
+    background-color: #2e3192 ;
+    max-width: 100%;
+    height: 55px;
+    /* height: 50px; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    /* border-bottom: 5px solid rgb(32, 71, 35); */
+}
+
+/* Styling for the about us title */
+
+
+/* Styling for the about subheadings */
+
+.abt-heading1 {
+    color: #2e3192;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px; /* Adjust this value for the desired bottom margin */
+}
+
+.abt-heading1::after {
+    content: '';
+    display: block;
+    width: 50%; /* Adjust this value as needed */
+    border-bottom: 2px solid #ffc600;
+    margin-top: 5px; /* Adjust this value for the space between text and border */
+}
+
+.abt-heading2{
+    color: #2e3192;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px; 
+}
+
+.abt-heading2::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust this value as needed */
+    border-bottom: 2px solid #ffc600;
+    margin-top: 5px; /* Adjust this value for the space between text and border */
+}
+
+
+/* Styling for the about information */
+#aboutInformation{
+    /* font-family: 'Montserrat', sans-serif !important;  */
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    
+}
+
+/* Styling for the about title */
+.aboutTitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Styling for the blue line */
+.blueLine {
+    border-top: 1px solid #483285 ;
+}
+
+/* Styling for the grey line */
+.greyLine {
+    border-top: 1px solid grey;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Styling for the image box */
+.image-box {
+    position: relative;
+    width: 100%;
+}
+
+/* Styling for the images in the image box */
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the overlay in the image box */
+.image-box .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+/* Show the overlay when the image box is hovered */
+.image-box:hover .overlay {
+    height: 100%;
+}
+
+/* Styling for the text in the image box */
+.image-box .text {
+    /* font-family: 'Montserrat', sans-serif !important; */
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.chairpersonImage {
+    z-index: 10; /* Adjust this value as needed */
+  }
+
+/* Styling for the member info */
+.memberInfo {
+    color: #333;
+    font-size: 16px;
+}
+/* Styling for the member section */
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the member image */
+.memberImage {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styling for the member info */
+.memberInfo {
+    flex-grow: 1;
+}
+.person-post {
+    color: #2e3192;
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 770px) {
+    .member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .memberImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* Styling for the board of members section */
+#boardOfMembers {
+    padding: 20px;
+}
+
+/* Styling for the member B section */
+.memberB {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styling for the board member image */
+.boardMemberImage {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styling for the member info B */
+.memberInfoB {
+    flex-grow: 1;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 770px) {
+    .memberB {
+        flex-direction: column;
+    }
+
+    .boardMemberImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Styling for the principles container */
+.principlesContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for the principle image */
+.principleImage {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1200px) {
+    .principlesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principle {
+        margin-bottom: 20px;
+    }
+
+    .principleImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Styling for the button group */
+.btnGroup .btn {
+    text-align: left;
+    font-weight: 700;
+    border: 1px solid #ddd;
+}
+
+/* Styling for the card with buttons */
+.cardWithButtons {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Styling for the about title */
+.aboutTitle {
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the blue line */
+.blueLine {
+    border-top: 1px solid #2e3192;
+}
+
+/* Styling for the button group */
+.btnGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Styling for the button */
+.btn {
+    color: #2e3192;
+    border-color: #2e3192;
+    margin: 10px 0;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Styling for the button hover state */
+.btn:hover {
+    color: #fff !important;
+    background-color: #2e3192 !important;
+}
+
+/* Styling for the button focus state */
+.btn:focus {
+    outline: none;
+}
+
+/* view more button style  */
+.abt-viewMore .viewMore_btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #ffc600;
+    padding: 0 35px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #07294d;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #ffc600;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 14px; 
+    line-height: 30px; 
+    }
+
+@media (max-width: 768px){
+    .abt-viewMore .viewMore_btn {
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 35px;
+        background-color: #ffc600;
+    }
+}

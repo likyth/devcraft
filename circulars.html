@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="headContent">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="css/academics.css">
+</head>
+<body>
+    <div id="navbar">
+        <!-- navbar is here -->
+    </div>
+
+<div class="academics-container">
+    <h2 id="academicsTitle">Notifications</h2>
+    <div class=" container aboutUsContainer">
+        <div class="row">
+            <div class="col-md-4" style="margin-bottom: 10px;">
+                <div class="card card_academics">
+                    <div class="btn_grp">
+                        <button type="button" class="btn mr-3 mb-3" data-target="SCHOLARSHIP2">SCHOOL</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="SCHOLARSHIP3">COLLEGE</button>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card academics-card">
+
+                    <div id="TIMETABLE" class="content" style="display: none;">
+                        <h1 class="card-body_title">TIMETABLE</h1>
+                        <div class="tt_options">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- <label for="selectedClass">Select Course</label> -->
+                                    <select class="form-control" id="courseSelect">
+                                        <option value="">COURSE</option>
+                                        <option value="PrimarySchool">PRIMARY SCHOOL</option>
+                                        <option value="Highschool">HIGH SCHOOL</option>
+                                        <option value="puc">PUC</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control" id="selectedStream" style="display: none;">
+                                        <option value="">STREAM</option>
+                                        <option value="SCIENCE">SCIENCE</option>
+                                        <option value="COMMERCE">COMMERCE</option>
+                                        <option value="ARTS">ARTS</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control" id="selectDay">
+                                        <option value="">Select a day</option>
+                                        <option value="Monday">Monday</option>
+                                        <option value="Tuesday">Tuesday</option>
+                                        <option value="Wednesday">Wednesday</option>
+                                        <option value="Thursday">Thursday</option>
+                                        <option value="Friday">Friday</option>
+                                        <option value="Saturday">Saturday</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="SCHOLARSHIP2" class="content" style="display: none;">
+                        <h2 class="card-body_title">CIRCULARS!</h2>
+                        <!-- <hr class="card-body_line"> -->
+                        <div class="scholarship-link">
+                            <a href="#" target="_blank">Results will be announced on (12-10-2024).</a>
+                            <div class="scholarship-description">
+                                <p>Check your results now!!!</p>
+                            </div>
+                        </div>
+                
+                        <div class="scholarship-link" onclick="toggleDescription('prematricPortal')">
+                            <a href="#" target="_blank">School reopens on 25/04/2024.</a>
+                            <div class="scholarship-description" id="prematricPortal">
+                                <p>Back to School!!!</p>
+                            </div>
+                        </div>
+                
+                        <div class="scholarship-link" onclick="toggleDescription('postmatricPortal')">
+                            <a href="#" target="_blank">New Timetable will be announced shortly</a>
+                            <div class="scholarship-description" id="postmatricPortal">
+                                <p>Timetable on the way!</p>
+                            </div>
+                        </div>
+                
+                        <div class="scholarship-link" onclick="toggleDescription('lionsClub')">
+                            <a href="#" target="_blank">Parent teachers meeting will be held on 2/3/2024</a>
+                            <div class="scholarship-description" id="lionsClub">
+                                <p>Parents Teachers Meeting is coming soon!!</p>
+                            </div>
+                        </div>
+                        <!-- Add more content as needed -->
+                    </div>
+                    <div id="SCHOLARSHIP3" class="content" style="display: none;">
+                        <h2 class="card-body_title">CIRCULARS!</h2>
+                        <!-- <hr class="card-body_line"> -->
+                        <div class="scholarship-link">
+                            <a href="#" target="_blank">Results will be announced on (12-10-2024).</a>
+                            <div class="scholarship-description">
+                                <p>Check your results now!!!</p>
+                            </div>
+                        </div>
+                
+                        <div class="scholarship-link" onclick="toggleDescription('prematricPortal')">
+                            <a href="#" target="_blank">College reopens on 25/04/2024.</a>
+                            <div class="scholarship-description" id="prematricPortal">
+                                <p>Back to College!!!</p>
+                            </div>
+                        </div>
+                
+                        <div class="scholarship-link" onclick="toggleDescription('postmatricPortal')">
+                            <a href="#" target="_blank">New Timetable will be announced shortly</a>
+                            <div class="scholarship-description" id="postmatricPortal">
+                                <p>Timetable on the way!</p>
+                            </div>
+                        </div>
+                
+                        <div class="scholarship-link" onclick="toggleDescription('lionsClub')">
+                            <a href="#" target="_blank">Parent teachers meeting will be held on 2/3/2024</a>
+                            <div class="scholarship-description" id="lionsClub">
+                                <p>Parents Teachers Meeting is coming soon!!</p>
+                            </div>
+                        </div>
+                        <!-- Add more content as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+        <!-- footer is here  -->
+</div>
+
+    <!-- script libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/academics.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <!-- common.js  -->
+    <script src="js/common.js"></script>
+
+    <!-- extra JS  -->
+    <script>
+        
+        function toggleDescription(descriptionId) {
+            var description = document.getElementById(descriptionId);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

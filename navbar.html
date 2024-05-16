@@ -1,0 +1,97 @@
+  <!-- Navigation Bars -->
+  <!-- Logo Nav -->
+<div class="small-topbar">
+  <nav class="navbar small-navbar">
+    <div class="navbar-link dropdown">
+      <a class="dropdown-toggle" href="#" role="button" id="quick-links" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-link"></i>Quick Links
+      </a>
+      <div class="dropdown-menu" aria-labelledby="quick-links">
+        <a class="dropdown-item" href="https://kseab.karnataka.gov.in/english">KSEEB</a>
+        <a class="dropdown-item" href="https://kseab.karnataka.gov.in/new-page/PUC%20Examination%20related%20Circulars/en" target="_blank">PUC Board</a>
+        <a class="dropdown-item" href="https://cetonline.karnataka.gov.in/kea/" target="_blank">KEA</a>
+        <a class="dropdown-item" href="https://ssp.postmatric.karnataka.gov.in/"target="_blank">SSP Postmatric</a>
+        <a class="dropdown-item" href="https://ssp.karnataka.gov.in/"target="_blank">SSP Prematric</a>
+        <a class="dropdown-item" href="https://scholarships.gov.in/"target="_blank">NSP</a>
+      </div>
+    </div>
+    <a class="navbar-link contact-link" href="contact.html"><i class="far fa-address-book"></i>Contact Us</a>
+    <a class="navbar-link circulars-link" href="circulars.html"><i class="fas fa-paper-plane"></i>Circulars</a>
+  </nav>
+</div>
+
+  <nav class="navbar navbar-light bg-light logo-navbar">
+    <div class="navbar-brand">
+      <a href="index.html">
+        <img class="desktop-logo" src="images/govt_log2.png" alt="Desktop Logo">
+        <img class="mobile-logo" src="images/school_logo_kn.png" alt="Mobile Logo">
+      </a>
+      <div class="logo-text">GOVERNMENT INSTITUTIONS RAJANKUNTE</div>
+    </div>
+  </nav>
+
+
+  <!-- Main Nav -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light main-navbar" id="main-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown" style="position: relative;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="aboutus.html#visionMission" onclick="simulateButtonClick('visionMission')">Vision Mission</a>
+            <a class="dropdown-item" href="aboutus.html#collageDevelopmentCommittee" onclick="simulateButtonClick('collageDevelopmentCommittee')">Development Committee</a>
+            <a class="dropdown-item" href="aboutus.html#boardOfMembers" onclick="simulateButtonClick('boardOfMembers')">Board of Members</a>
+            <a class="dropdown-item" href="aboutus.html#chairperson" onclick="simulateButtonClick('chairperson')">About Chairperson</a>
+            <a class="dropdown-item" href="aboutus.html#principles" onclick="simulateButtonClick('principles')">Principles</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="facilities.html">Facilities</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="admission.html">Admission</a>
+        </li>
+        <li class="nav-item dropdown" style="position: relative;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Academics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="academics.html#OVERVIEW">Overview</a>
+            <a class="dropdown-item" href="academics.html#TIMETABLE">Timetable</a>
+            <a class="dropdown-item" href="academics.html#SCHOLARSHIP">Scholarship</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown" style="position: relative;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Departments
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="primarySchool.html" onclick="simulateButtonClick('primarySchoolSection')">Primary School</a>
+            <a class="dropdown-item" href="highSchool.html" onclick="simulateButtonClick('highSchoolSection')">High School</a>
+            <a class="dropdown-item" href="PUC.html" onclick="simulateButtonClick('puSection')">PU College</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="alumni.html">Alumni</a>
+        </li>
+        <select id="language-select" onchange="changeLanguage()">
+          <option value="en">English</option>
+          <option value="kn">ಕನ್ನಡ</option>
+        </select>
+        
+      </ul>
+    </div>
+  </nav>
